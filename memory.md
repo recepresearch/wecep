@@ -4,7 +4,7 @@
 > İşaretler: [x] bitti · [~] kod hazır, gerçek veri bekliyor · [ ] yapılmadı
 
 ## Etkinlik (KESİN BİLGİLER)
-- **Workshop on Environment, Clean Energy, and Economic Policy** (kullanıcı "Envinment" yazmıştı → düzeltildi). TR çeviri önerimiz: "Çevre, Temiz Enerji ve Ekonomi Politikası Çalıştayı". Kısaltma **ECEP 2027** bizim önerimiz (onaylanmadı).
+- **Workshop on Environment, Clean Energy, and Economic Policy** (kullanıcı "Envinment" yazmıştı → düzeltildi). TR çeviri önerimiz: "Çevre, Temiz Enerji ve Ekonomi Politikası Çalıştayı". Kısaltma **WECEP 2027** (KESİN — "Workshop on" ile başlar; 2026-10-26 kullanıcı bildirdi).
 - Tür: **ÇALIŞTAY** (sempozyum değil, hakemli değil). Tarih: **18–19 Ocak 2027** (Pzt–Salı). Yer: **YTÜ Davutpaşa Kampüsü**, Esenler/İstanbul (OSM: 41.025615, 28.89368; M1A Davutpaşa–YTÜ istasyonu).
 - Düzenleyen: **YTÜ İİBF İktisat Bölümü**. Danışman: Ahmet Hoca.
 - **Sitenin amacı:** TÜBİTAK **2223-B** Yurt İçi Bilimsel Etkinlik Düzenleme Desteği başvurusunda "Etkinlik İnternet Adresi" olarak verilecek. Hoca: "çok aman aman olmasına gerek yok", Facebook/LinkedIn değil kendi sayfası olmalı, başvuru alınmayabilir → buton "Başvurular henüz başlamadı" modalı açar. Katılımcılar çoğunlukla kurum içi + öğrenciler. Broşür sonra gelecek → tema/renkler ona göre güncellenecek.
@@ -48,7 +48,8 @@
 - [ ] **Bilim kurulu** isim/unvan/kurum → `committees.scientific`
 - [ ] Konu/amaç/kapsam/tema metinlerini hocaya onaylat (şu an AI taslağı, iktisat odaklı)
 - [ ] İletişim e-postası → `contact.email`
-- [ ] TR başlık çevirisi ve "ECEP 2027" kısaltması onayı
+- [x] Kısaltma: WECEP 2027 (kesinleşti)
+- [ ] TR başlık çevirisi onayı ("Çevre, Temiz Enerji ve Ekonomi Politikası Çalıştayı")
 - [ ] Repo adı kararı (sempozyum2027 → calistay2027?) — TÜBİTAK formuna link girilmeden ÖNCE
 - [~] Broşür → `downloads[0].href` + broşür teması (renkler `tailwind.config` brand/accent)
 - [ ] Davetli konuşmacılar (varsa) → `speakers`
@@ -60,3 +61,4 @@
 - 2026-10-23 · 6: Hocanın mesajları + TÜBİTAK 2223-B çağrı metni incelendi. Site BAŞTAN yazıldı: tüm sahte/örnek veri (kişiler, IBAN, bildiriler, oteller, teşvik kartı, KVKK, ücretler) kaldırıldı. Yeni yapı: Hero (YTÜ Davutpaşa, İİBF İktisat) · Konu/Amaç/Kapsam + Hedef kitle/Yöntem/Çıktılar · 6 tema · takvim (tarihsiz maddeler destekli) · kurullar (boş → yakında) · konuşmacılar (Belirlenecek) · taslak program · Duyurular · Mekân/ulaşım (OSM, M1A) · TÜBİTAK destek ibaresi + katkılar + belgeler (broşür yakında) · SSS · "Başvurular henüz başlamadı" modalı. Favicon/OG/404/robots/sitemap güncellendi. 49 ikon doğrulandı, faz/takvim testleri ve ekran görüntüleri OK.
 - 2026-10-24 · 7: Tasarım baştan (kullanıcı: 'AI slop gibi', 21st.dev/Apple hissi, koyu mod, Fontshare, Hugeicons yalnız araçlarda). Tailwind+Lucide kaldırıldı, elle CSS; Sentient+General Sans; keten/yosun/oker paleti; topografik kontur dokusu (topo.svg, node ile üretildi); kayan göstergeli sekmeler; cam yüzer menü; görünürken beliriş; paralaks; View Transitions ile koyu mod; iOS alt sayfa modalı. Hakkında 5 sekmeye toplandı (Amaç/Kapsam/Hedef kitle/Yöntem/Çıktılar). Favicon, OG, 404 yeni kimliğe uyarlandı. Masaüstü+mobil (390px) açık/koyu ekran görüntüleriyle doğrulandı; mobil taşma ve rozet kırılması düzeltildi.
 - 2026-10-24 · 8: Kullanıcı: mobilde sayfa kendi kendine kayıyor, PC akıcı değil. Sebepler: (1) segmented() içindeki scrollIntoView + iOS resize → sayfa sıçraması; (2) blur filtreli beliriş animasyonu; (3) paralaks; (4) büyük SVG CSS mask. Hepsi kaldırıldı/değiştirildi: beliriş ve paralaks silindi, sekme el.scrollTo + yalnız genişlik resize, doku renkli SVG arka plan + gradyan katman, hover yalnız fareli cihazlarda, backdrop blur 22→16px. Solma katmanının metni örtme hatası düzeltildi. Konsolda hata yok; masaüstü/mobil açık-koyu görüntüler doğrulandı.
+- 2026-10-26 · 9: Kısaltma ECEP → **WECEP** (Workshop on ...). index/404/OG kaynağı güncellendi; favicon harfi "w" (italik Sentient); OG, apple-touch, favicon.ico yeniden üretildi. localStorage anahtarları (ecep-lang, ecep-theme) bilerek değiştirilmedi.
