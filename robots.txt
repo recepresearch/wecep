@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ilhanselahattin.github.io/sempozyum2027/sitemap.xml
+Sitemap: https://wecep.net/sitemap.xml

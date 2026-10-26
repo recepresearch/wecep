@@ -1,34 +1,44 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <!--
+    DİL YAPISI: Bu dosya İngilizce (varsayılan, https://wecep.net/) sürümdür.
+    Türkçe sürüm (tr/index.html) bu dosyadan üretilir — elle düzenlemeyin:
+      node tools/build-tr.js
+    Sayfanın dili <html lang> özniteliğinden okunur; içerik symposiumData içindeki { en, tr } alanlarından gelir.
+  -->
+  <!-- i18n-head -->
   <title>WECEP 2027 · Workshop on Environment, Clean Energy, and Economic Policy</title>
-  <meta name="description" content="Workshop on Environment, Clean Energy, and Economic Policy (WECEP 2027) — 18–19 Ocak 2027, Yıldız Teknik Üniversitesi Davutpaşa Kampüsü, İstanbul. Düzenleyen: YTÜ İİBF İktisat Bölümü." />
+  <meta name="description" content="Workshop on Environment, Clean Energy, and Economic Policy (WECEP 2027) — 18–19 January 2027, Yildiz Technical University, Davutpaşa Campus, Istanbul. Organised by the YTU Department of Economics." />
+  <link rel="canonical" href="https://wecep.net/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:url" content="https://wecep.net/" />
+  <meta property="og:description" content="18–19 January 2027 · Yildiz Technical University, Davutpaşa Campus, Istanbul. Organised by the YTU Department of Economics." />
+  <meta property="og:image:alt" content="WECEP 2027 workshop banner" />
+  <!-- /i18n-head -->
+  <link rel="alternate" hreflang="en" href="https://wecep.net/" />
+  <link rel="alternate" hreflang="tr" href="https://wecep.net/tr/" />
+  <link rel="alternate" hreflang="x-default" href="https://wecep.net/" />
   <meta name="theme-color" content="#F3F1EA" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0E110F" media="(prefers-color-scheme: dark)" />
-  <!-- Site adresi değişirse bu URL'yi geçen tüm yerleri güncelleyin (canonical, og, JSON-LD, robots.txt, sitemap.xml) -->
-  <link rel="canonical" href="https://ilhanselahattin.github.io/sempozyum2027/" />
 
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="tr_TR" />
-  <meta property="og:locale:alternate" content="en_GB" />
   <meta property="og:site_name" content="WECEP 2027" />
   <meta property="og:title" content="Workshop on Environment, Clean Energy, and Economic Policy · WECEP 2027" />
-  <meta property="og:description" content="18–19 Ocak 2027 · YTÜ Davutpaşa Kampüsü, İstanbul. Düzenleyen: YTÜ İİBF İktisat Bölümü." />
-  <meta property="og:url" content="https://ilhanselahattin.github.io/sempozyum2027/" />
-  <meta property="og:image" content="https://ilhanselahattin.github.io/sempozyum2027/assets/img/og-image.png" />
+  <meta property="og:image" content="https://wecep.net/assets/img/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="WECEP 2027 çalıştay görseli" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Workshop on Environment, Clean Energy, and Economic Policy · WECEP 2027" />
-  <meta name="twitter:description" content="18–19 January 2027 · Yildiz Technical University, Davutpasa Campus, Istanbul." />
-  <meta name="twitter:image" content="https://ilhanselahattin.github.io/sempozyum2027/assets/img/og-image.png" />
+  <meta name="twitter:description" content="18–19 January 2027 · Yildiz Technical University, Davutpaşa Campus, Istanbul." />
+  <meta name="twitter:image" content="https://wecep.net/assets/img/og-image.png" />
 
   <script type="application/ld+json">
   {
@@ -46,8 +56,9 @@
       "address": { "@type": "PostalAddress", "streetAddress": "Çifte Havuzlar Mah.", "addressLocality": "Esenler", "addressRegion": "İstanbul", "postalCode": "34220", "addressCountry": "TR" },
       "geo": { "@type": "GeoCoordinates", "latitude": 41.025615, "longitude": 28.89368 }
     },
-    "image": ["https://ilhanselahattin.github.io/sempozyum2027/assets/img/og-image.png"],
-    "description": "Çevre, temiz enerji ve ekonomi politikası alanlarında akademisyenleri, araştırmacıları ve lisansüstü öğrencileri bir araya getiren bilimsel çalıştay.",
+    "url": "https://wecep.net/",
+    "image": ["https://wecep.net/assets/img/og-image.png"],
+    "description": "A scientific workshop bringing together academics, researchers and graduate students working on environment, clean energy and economic policy.",
     "organizer": { "@type": "Organization", "name": "Yıldız Teknik Üniversitesi İktisadi ve İdari Bilimler Fakültesi İktisat Bölümü" },
     "inLanguage": ["tr", "en"]
   }
@@ -90,8 +101,8 @@
       --accent-soft: rgba(47, 75, 55, .075);
       --sun: #B4843A;
       --sky: #4F6E78;
-      --topo-img: url(assets/img/topo-light.svg);
-      --topo-img-alt: url(assets/img/topo-dark.svg);
+      --topo-img: url(/assets/img/topo-light.svg);
+      --topo-img-alt: url(/assets/img/topo-dark.svg);
       --map-filter: saturate(.55) contrast(.95) brightness(1.02);
       --shadow: 0 1px 0 rgba(255, 255, 255, .7) inset, 0 1px 2px rgba(22, 26, 20, .04), 0 10px 30px -18px rgba(22, 26, 20, .18);
       --shadow-hover: 0 1px 0 rgba(255, 255, 255, .7) inset, 0 2px 4px rgba(22, 26, 20, .04), 0 22px 44px -22px rgba(22, 26, 20, .28);
@@ -118,8 +129,8 @@
       --accent-soft: rgba(169, 198, 159, .09);
       --sun: #D8B169;
       --sky: #8DAEB8;
-      --topo-img: url(assets/img/topo-dark.svg);
-      --topo-img-alt: url(assets/img/topo-light.svg);
+      --topo-img: url(/assets/img/topo-dark.svg);
+      --topo-img-alt: url(/assets/img/topo-light.svg);
       --map-filter: invert(.9) hue-rotate(180deg) saturate(.45) brightness(.95) contrast(.9);
       --shadow: 0 1px 0 rgba(255, 255, 255, .035) inset, 0 12px 32px -18px rgba(0, 0, 0, .7);
       --shadow-hover: 0 1px 0 rgba(255, 255, 255, .05) inset, 0 24px 48px -22px rgba(0, 0, 0, .8);
@@ -219,15 +230,16 @@
       overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
     }
     .seg::-webkit-scrollbar { display: none; }
-    .seg button {
+    .seg :is(button, a) {
+      display: inline-block; text-decoration: none;
       position: relative; z-index: 1; flex: none;
       border: 0; background: none; cursor: pointer;
       padding: 9px 18px; border-radius: 999px;
       font-size: 14.5px; font-weight: 500; color: var(--ink-3); white-space: nowrap;
       transition: color .35s var(--ease);
     }
-    .seg button:hover { color: var(--ink-2); }
-    .seg button[aria-selected="true"] { color: var(--ink); }
+    .seg :is(button, a):hover { color: var(--ink-2); }
+    .seg :is(button, a)[aria-selected="true"] { color: var(--ink); }
     .seg .thumb {
       position: absolute; z-index: 0; top: 4px; bottom: 4px; left: 0;
       border-radius: 999px; background: var(--bg-elev);
@@ -235,10 +247,10 @@
       transition: transform .55s var(--spring), width .55s var(--spring);
     }
     .seg.sm { padding: 3px; }
-    .seg.sm button { padding: 5px 11px; font-size: 12.5px; letter-spacing: .02em; }
+    .seg.sm :is(button, a) { padding: 5px 11px; font-size: 12.5px; letter-spacing: .02em; }
     .seg.sm .thumb { top: 3px; bottom: 3px; }
     .seg.block { display: flex; width: 100%; }
-    .seg.block button { flex: 1 0 auto; }
+    .seg.block :is(button, a) { flex: 1 0 auto; }
 
     .chip { display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border-radius: 999px; font-size: 12.5px; color: var(--ink-2); background: var(--bg-sunken); border: 1px solid var(--line); }
     .pill { display: inline-flex; align-items: center; gap: 8px; height: 28px; padding: 0 12px; border-radius: 999px; font-size: 12.5px; font-weight: 500; color: var(--ink-3); border: 1px solid var(--line); white-space: nowrap; }
@@ -523,11 +535,12 @@
       </nav>
 
       <div class="nav-actions">
-        <div class="seg sm" role="tablist" aria-label="Dil / Language" x-data="segmented()" x-effect="lang; $nextTick(() => update($el))">
+        <!-- Dil = adres: İngilizce "/" , Türkçe "/tr/" -->
+        <nav class="seg sm" aria-label="Language / Dil" x-data="segmented()" x-init="$nextTick(() => update($el))">
           <span class="thumb" :style="thumb" aria-hidden="true"></span>
-          <button type="button" role="tab" :aria-selected="lang === 'tr'" @click="setLang('tr')">TR</button>
-          <button type="button" role="tab" :aria-selected="lang === 'en'" @click="setLang('en')">EN</button>
-        </div>
+          <a href="/" hreflang="en" lang="en" class="seg-link" :aria-selected="lang === 'en'" :aria-current="lang === 'en' ? 'page' : null" @click="keepSection($event)">EN</a>
+          <a href="/tr/" hreflang="tr" lang="tr" class="seg-link" :aria-selected="lang === 'tr'" :aria-current="lang === 'tr' ? 'page' : null" @click="keepSection($event)">TR</a>
+        </nav>
         <button type="button" class="icon-btn" @click="toggleTheme($event)" :aria-label="L('a11y.theme')">
           <span class="ico" x-html="theme === 'dark' ? icon('sun') : icon('moon')"></span>
         </button>
@@ -1464,12 +1477,8 @@
         ],
 
         init() {
-          try {
-            const saved = localStorage.getItem('ecep-lang');
-            if (saved === 'tr' || saved === 'en') this.lang = saved;
-            else if ((navigator.language || '').toLowerCase().startsWith('en')) this.lang = 'en';
-          } catch (e) { /* depolama erişilemez */ }
-          document.documentElement.lang = this.lang;
+          // Dil sayfanın kendisinden gelir: / → en, /tr/ → tr (tr/index.html'de <html lang="tr">)
+          this.lang = document.documentElement.lang === 'tr' ? 'tr' : 'en';
 
           const p = new URLSearchParams(location.search).get('phase');
           if (['cfp', 'live', 'archive'].includes(p)) this.previewPhase = p;
@@ -1508,10 +1517,10 @@
           });
         },
 
-        setLang(l) {
-          this.lang = l;
-          document.documentElement.lang = l;
-          try { localStorage.setItem('ecep-lang', l); } catch (e) { /* yoksay */ }
+        // Dil değiştirirken bulunulan bölümü koru (ör. /#dates → /tr/#dates)
+        keepSection(e) {
+          const target = this.activeSection ? '#' + this.activeSection : '';
+          if (target) { e.preventDefault(); location.href = e.currentTarget.getAttribute('href') + target; }
         },
 
         applyTheme(next, persist = true) {
